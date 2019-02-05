@@ -47,7 +47,7 @@ function mix(s1, s2) {
     let sortedByChar = sortArraysBySymbols(sortedByNumOrder);
 
     let sortedByLengthOrder = sortedByChar.sort((a, b) => b.length - a.length);
-    
+    console.log(sortedByLengthOrder.toString().split(',').join('/'));
     return sortedByLengthOrder.toString().split(',').join('/');
 // Functions
     function sortArraysBySymbols(arr) {
@@ -120,4 +120,4 @@ function mix(s1, s2) {
         return iter(str);
     }
 }
-mix(" In many languages", " there's a pair of functions");
+mix("vova", " hyilo");
